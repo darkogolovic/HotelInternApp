@@ -1,1 +1,3 @@
-# The hotel intern App
+# The hotel Intern App
+
+Made with React, React Query, Supabase
