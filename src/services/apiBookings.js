@@ -1,4 +1,4 @@
-//import { getToday } from "../utils/helpers";
+import { getToday } from "../utils/helpers";
 import { PAGE_SIZE } from "../utils/constants";
 import supabase from "./supabase";
 
@@ -69,7 +69,6 @@ export async function getBookingsAfterDate(date) {
 export async function getStaysAfterDate(date) {
   const { data, error } = await supabase
     .from("bookings")
-    // .select('*')
     .select("*, guests(fullName)")
     .gte("startDate", date)
     .lte("startDate", getToday());
