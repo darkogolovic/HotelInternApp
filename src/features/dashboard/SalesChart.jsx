@@ -14,6 +14,7 @@ import { useDarkMode } from "../../context/DarkModeContext";
 import { eachDayOfInterval, format, isSameDay, subDays } from "date-fns";
 
 const StyledSalesChart = styled(DashboardBox)`
+  height: 40rem;
   grid-column: 1 / -1;
 
   /* Hack to change grid line colors */
